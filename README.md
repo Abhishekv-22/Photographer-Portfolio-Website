@@ -1,21 +1,38 @@
-# Soroban Project
+# Photographer Portfolio Website 📸✨
 
-## Project Structure
+A decentralized portfolio website for photographers built using the Stellar blockchain and Soroban smart contracts. Submitted as part of MP's biggest Web 3.0 Build-a-thon.
 
-This repository uses the recommended structure for a Soroban project:
-```text
-.
-├── contracts
-│   └── hello_world
-│       ├── src
-│       │   ├── lib.rs
-│       │   └── test.rs
-│       └── Cargo.toml
-├── Cargo.toml
-└── README.md
-```
+## 🚀 Overview
 
-- New Soroban contracts can be put in `contracts`, each in their own directory. There is already a `hello_world` contract in there to get you started.
-- If you initialized this project with any other example contracts via `--with-example`, those contracts will be in the `contracts` directory as well.
-- Contracts should have their own `Cargo.toml` files that rely on the top-level `Cargo.toml` workspace for their dependencies.
-- Frontend libraries can be added to the top-level directory as well. If you initialized this project with a frontend template via `--frontend-template` you will have those files already included.
+This platform allows photographers to:
+- 📤 Upload their best shots
+- 💰 Receive tips from visitors in a decentralized way
+- 🔍 Let users view and appreciate their work on-chain
+
+## 🔗 Built With
+
+- 🌐 **Stellar Blockchain** + **Soroban Smart Contracts**
+- 🦀 **Rust** for writing smart contracts
+- 📁 **IPFS (optional)** for decentralized image hosting
+- 🧰 **VS Code**, **Git**, and **CLI tools**
+
+## 📂 Project Structure
+
+Photographer-Portfolio-Website/ ├── contracts/ │ └── hello world/ │ ├── Cargo.toml │ ├── Makefile │ └── src/ │ ├── lib.rs # Main smart contract logic │ └── test.rs # Unit tests ├── Cargo.toml ├── Cargo.lock └── README.md
+
+
+## 📜 Smart Contract Functions
+
+- `upload_photo()`: Store a new photo entry
+- `view_photo()`: Retrieve photo information
+- `tip_photo()`: Allow users to tip the photographer
+
+## 🛠️ How to Build
+
+```bash
+# Navigate to the contract directory
+cd contracts/hello\ world/
+
+# Build using Soroban CLI
+stellar contract build
+
